@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="css/styles.css">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/main.js" defer></script>
+<title>Formula-1 Global Rankings</title>
+</head>
+<style></style>
+<body>
+    <!--making the container-->
+    <div class="container">
+        <h1>Formula-1 Global Rankings By Season/Round</h1>
+        <div class="row">
+            <div class="col">
+
+                <!--user input using DOM -->
+                <form name="search" id="search_form">
+                    <label for="season">Season:</label>
+                    <input type="text" name="season" id="season" placeholder="1950-2021">
+                    <label for="round">Round:</label>
+                    <input type="text" name="round" id="round" placeholder="1..2..3..">
+                    <button type="submit" id="submitButton" onClick="disp_data()">Submit</button>
+                </form>
+            </div>
+        </div>
+
+                <!--API Data Table-->
+        <div class="row" id="racer-data">
+            <table id="racer-table">
+                <th scope="col">Position</th>
+                <th scope="col">Name</th>
+                <th scope="col">Nationality</th>
+                <th scope="col">Sponsor</th>
+                <th scope="col">Points</th>
+                    <rt_body id=rt_body>
+                        <tr id="table-row-0">
+                            <th scope="row">1</th>
+                        </tr>
+                        <tr id="table-row-1">
+                            <th scope="row">2</th>
+                        </tr>
+                        <tr id="table-row-2">
+                            <th scope="row">3</th>
+                        </tr>
+                        <tr id="table-row-3">
+                            <th scope="row">4</th>
+                        </tr>
+                        <tr id="table-row-4">
+                            <th scope="row">5</th>
+                        </tr>
+                        <tr id="table-row-5">
+                            <th scope="row">6</th>
+                        </tr>
+                        <tr id="table-row-6">
+                            <th scope="row">7</th>
+                        </tr>
+                    </rt_body>
+            </table>
+        </div>
+
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>        
+</body>
+</html>

@@ -1,0 +1,31 @@
+body{
+    padding: 5px 10px;
+    height: 88vh;
+    width: auto;
+    justify-content: center;
+    background-image: url(../images/F1_track.jpg);
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 30px;
+}
+
+form{
+    padding: 0px 0px 40px 105px;
+}
+
+tr{
+    padding: 80px;
+    font-size: 6mm;
+}
+
+th{
+    color: white;
+}
+
+td {
+    color: white;
+}
